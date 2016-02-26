@@ -8,4 +8,4 @@ RUN apt-get -q update                   \
     && apt-get -q clean                 \
     && rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/usr/bin/java"]
+CMD ["java"]
