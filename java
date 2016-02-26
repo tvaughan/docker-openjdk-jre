@@ -3,5 +3,5 @@
 CONTAINER=tvaughan/openjdk-jre
 VERSION=8
 CMD=$(basename $0)
-docker run --rm -i -t -v $PWD:/tmp/workdir -w /tmp/workdir $CONTAINER:$VERSION $CMD "$@"
+docker run --rm -i -t -v $PWD:/mnt/workdir $CONTAINER:$VERSION $CMD "$@"
 exit 0
